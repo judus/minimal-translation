@@ -1,0 +1,4 @@
+suites:
+  library_suite:
+    namespace: Maduser\Minimal\Translation\Tests
+    psr4_prefix: Maduser\Minimal\Translation\Tests
