@@ -157,7 +157,7 @@ class Translator
     public static function get($args, $lang = null)
     {
         $lang = !is_null($lang) ? $lang : self::getLanguage();
-        $args = is_array($args) ? $args : [$args];
+        $args = is_array($args) ? $args : [$args, null];
 
         $text = $args[0];
         //unset($args[0]);
