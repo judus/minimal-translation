@@ -76,7 +76,7 @@ class Translator
      */
     public static function getPreferedLanguages()
     {
-        if (count(self::$preferedLanguages) == 0) {
+        if (is_null(self::$preferedLanguages)) {
             self::setPreferedLanguages(
                 strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"])
             );
